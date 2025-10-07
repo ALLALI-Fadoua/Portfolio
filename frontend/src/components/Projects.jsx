@@ -15,7 +15,7 @@ const Projects = () => {
         "Gestion des métadonnées"
       ],
       url: "www.sql.com",
-      image: "../../public/assets/SQL-Home.png",
+      image: "/assets/SQL-Home.png",
       category: "Simulation Full-Stack"
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
         "Analyse des offres d'emploi"
       ],
       url: "#",
-      image: "../../public/assets/Mihneti-Home.png",
+      image: "/assets/Mihneti-Home.png",
       category: "Plateforme Full-Stack"
     },
     {
@@ -45,7 +45,7 @@ const Projects = () => {
         "Formulaire de contact"
       ],
       url: "#",
-      image: "../../public/assets/Portfolio-Home.png",
+      image: "/assets/Portfolio-Home.png",
       category: "Web Design"
     }
   ];

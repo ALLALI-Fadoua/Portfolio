@@ -32,7 +32,7 @@ const ProjectDetail = () => {
       duration: "2 mois",
       team: "Solo",
       year: "2025",
-      logo: "../../public/assets/SQL-Logo.png",
+      logo: "/assets/SQL-Logo.png",
       availableForWork: false,
       description: "SQL Miroir est une application web innovante qui simule un système de gestion de base de données relationnelle (SGBDR). Elle permet aux utilisateurs d'exécuter des opérations SQL à travers une interface utilisateur interactive et intuitive.",
       context: "Développé pour aider les étudiants et les professionnels à comprendre et à pratiquer les opérations SQL sans avoir besoin d'installer un SGBDR complet. L'application offre une expérience immersive avec une simulation complète des fonctionnalités essentielles d'une base de données relationnelle.",
@@ -61,18 +61,18 @@ const ProjectDetail = () => {
       ],
       githubUrl: "https://github.com/ALLALI-Fadoua/SQL-Miroir",
       url: "www.sql-miroir.com",
-      heroImage: "../../public/assets/SQL-Home.png",
+      heroImage: "/assets/SQL-Home.png",
       heroColor: "from-blue-900/90 to-blue-950/90",
       galleryImages: [
-        { url: "../../public/assets/SQL-Requete.png", title: "Création d’une BDD et sauvegarde dans metadonnees" },
-        { url: "../../public/assets/SQL-Singup.png", title: "Page d’inscription (Sign Up) dans SQL Miroir" },
-        { url: "../../public/assets/SQL-Login.png", title: "Page de connexion (Login) dans SQL Miroir" },
-        { url: "../../public/assets/SQL-DataBase.png", title: "Affichage des bases de données simulées à partir des métadonnées" },
-        { url: "../../public/assets/SQL-Table.png", title: "Affichage des tables simulées à partir des métadonnées" },
-        { url: "../../public/assets/SQL-Attribute.png", title: "Affichage des attributes simulées à partir des métadonnées" },
-        { url: "../../public/assets/SQL-Value.png", title: "Affichage des valeurs simulées à partir des métadonnées" },
-        { url: "../../public/assets/SQL-PrimaryKey.png", title: "Affichage des primary key simulées à partir des métadonnées" },
-        { url: "../../public/assets/SQL-ForiegnKey.png", title: "Affichage des foriegn key simulées à partir des métadonnées" }
+        { url: "/assets/SQL-Requete.png", title: "Création d’une BDD et sauvegarde dans metadonnees" },
+        { url: "/assets/SQL-Singup.png", title: "Page d’inscription (Sign Up) dans SQL Miroir" },
+        { url: "/assets/SQL-Login.png", title: "Page de connexion (Login) dans SQL Miroir" },
+        { url: "/assets/SQL-DataBase.png", title: "Affichage des bases de données simulées à partir des métadonnées" },
+        { url: "/assets/SQL-Table.png", title: "Affichage des tables simulées à partir des métadonnées" },
+        { url: "/assets/SQL-Attribute.png", title: "Affichage des attributes simulées à partir des métadonnées" },
+        { url: "/assets/SQL-Value.png", title: "Affichage des valeurs simulées à partir des métadonnées" },
+        { url: "/assets/SQL-PrimaryKey.png", title: "Affichage des primary key simulées à partir des métadonnées" },
+        { url: "/assets/SQL-ForiegnKey.png", title: "Affichage des foriegn key simulées à partir des métadonnées" }
       ]
     },
     "mehneti": {
@@ -82,7 +82,7 @@ const ProjectDetail = () => {
       duration: "5 mois",
       team: "2 Chefs de projet (développeurs)",
       year: "2025",
-      logo: "../../public/assets/Mihneti-logo.png",
+      logo: "/assets/Mihneti-logo.png",
       availableForWork: false,
       description: "Mehneti.dz est une plateforme web complète qui connecte les chercheurs d'emploi et les employeurs en Algérie. En tant que chef de projet et développeur principal, j'ai conçu et développé cette solution innovante qui révolutionne le processus de recrutement.",
       context: "Cette plateforme utilise des algorithmes de matching intelligent pour connecter les candidats avec les opportunités les plus pertinentes. Elle offre une expérience utilisateur fluide avec des fonctionnalités de chat en temps réel, de gestion de profils avancée et d'analytiques détaillées.",
@@ -111,18 +111,18 @@ const ProjectDetail = () => {
       ],
       githubUrl: "https://github.com/ALLALI-Fadoua/Mihneti",
       url: "www.mihneti.online",
-      heroImage: "../../public/assets/Mihneti-Home.png",
+      heroImage: "/assets/Mihneti-Home.png",
       heroColor: "from-blue-900/90 to-indigo-900/90",
       galleryImages: [
-        { url: "../../public/assets/Mihneti-Dash-Admin.png", title: "Dashboard Admin" },
-        { url: "../../public/assets/Mihneti-Dash-Company.png", title: "Dashboard Recreteur" },
-        { url: "../../public/assets/Mihneti-Dash-Applicant.png", title: "Dashboard Demandeur d'Emploi" },
-        { url: "../../public/assets/Mihneti-chat.png", title: "Chat en temps réel" },
-        { url: "../../public/assets/Mihneti-ListeOffres.png", title: "Liste des Offres d'Emploi" },
-        { url: "../../public/assets/Mihneti-CVFormat.png", title: "Génération de CV multi-formats" },
-        { url: "../../public/assets/Mihneti-Candidature.png", title: "Candidature avec sélection obligatoire d'un CV" },
-        { url: "../../public/assets/Mihneti-ListeCandidature.png", title: "Liste des Candidatures" },
-        { url: "../../public/assets/Mihneti-DetailInterviews.png", title: "Génération de CV multi-formats" }
+        { url: "/assets/Mihneti-Dash-Admin.png", title: "Dashboard Admin" },
+        { url: "/assets/Mihneti-Dash-Company.png", title: "Dashboard Recreteur" },
+        { url: "/assets/Mihneti-Dash-Applicant.png", title: "Dashboard Demandeur d'Emploi" },
+        { url: "/assets/Mihneti-chat.png", title: "Chat en temps réel" },
+        { url: "/assets/Mihneti-ListeOffres.png", title: "Liste des Offres d'Emploi" },
+        { url: "/assets/Mihneti-CVFormat.png", title: "Génération de CV multi-formats" },
+        { url: "/assets/Mihneti-Candidature.png", title: "Candidature avec sélection obligatoire d'un CV" },
+        { url: "/assets/Mihneti-ListeCandidature.png", title: "Liste des Candidatures" },
+        { url: "/assets/Mihneti-DetailInterviews.png", title: "Génération de CV multi-formats" }
       ]
     },
     "portfolio": {
@@ -132,7 +132,7 @@ const ProjectDetail = () => {
       duration: "1 semaine",
       team: "Solo",
       year: "2025",
-      logo: "../../public/assets/Portfolio-Logo.png",
+      logo: "/assets/Portfolio-Logo.png",
       availableForWork: true,
       description: "Un site portfolio personnel avec un design moderne, mode sombre, et des interfaces fluides. Conçu pour présenter mes compétences et projets de manière élégante et professionnelle.",
       context: "Ce portfolio démontre ma maîtrise des dernières technologies web et des principes de design moderne. Il offre une expérience utilisateur exceptionnelle, une navigation fluide et un design responsive qui s'adapte parfaitement à tous les appareils.",
@@ -160,16 +160,16 @@ const ProjectDetail = () => {
       ],
       githubUrl: "https://github.com/ALLALI-Fadoua/Portfolio",
       url: "https://my-portfolio-alfa.vercel.app/",
-      heroImage: "../../public/assets/Portfolio-Home.png",
+      heroImage: "/assets/Portfolio-Home.png",
       heroColor: "from-purple-900/90 to-indigo-900/90",
       galleryImages: [
         
-        { url: "../../public/assets/Portfolio-Clair.png", title: "Page principale du Portfolio en mode clair" },
-        { url: "../../public/assets/Portfolio-Parcours.png", title: "À propos de moi" },
-        { url: "../../public/assets/Portfolio-Skills.png", title: "Mes Compétences" },
-        { url: "../../public/assets/Portfolio-Projects.png", title: "Mes Projets" },
-        { url: "../../public/assets/Portfolio-Contact.png", title: "Contactez-moi" },
-        { url: "../../public/assets/Portfolio-Footer.png", title: "Pied de page (Footer) du Portfolio" }
+        { url: "/assets/Portfolio-Clair.png", title: "Page principale du Portfolio en mode clair" },
+        { url: "/assets/Portfolio-Parcours.png", title: "À propos de moi" },
+        { url: "/assets/Portfolio-Skills.png", title: "Mes Compétences" },
+        { url: "/assets/Portfolio-Projects.png", title: "Mes Projets" },
+        { url: "/assets/Portfolio-Contact.png", title: "Contactez-moi" },
+        { url: "/assets/Portfolio-Footer.png", title: "Pied de page (Footer) du Portfolio" }
       ]
     }
   };
