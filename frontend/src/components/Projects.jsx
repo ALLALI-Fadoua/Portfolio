@@ -1,56 +1,71 @@
-import { ExternalLink, Github, Zap, Users, Globe } from 'lucide-react';
+import { ExternalLink, Globe, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
     {
+      id: "sql-miroir",
       title: "SQL Miroir",
-      description: "A web app simulating a relational database system (SGBDR). Built to execute SQL-like operations through an interactive UI.",
-      technologies: ["React", "Node.js", "Express", "MySQL"],
+      description: "Application web simulant un système de base de données relationnelle (SGBDR). Conçue pour exécuter des opérations similaires au SQL via une interface interactive.",
+      technologies: ["React", "Vite", "Node.js", "Express", "MySQL"],
       features: [
-        "DB & Table Simulation",
-        "SQL Query Execution",
-        "Real-time Result Display",
-        "Metadata Management"
+        "Simulation de bases de données et de tables",
+        "Exécution de requêtes SQL",
+        "Affichage des résultats en temps réel",
+        "Gestion des métadonnées"
       ],
-      liveUrl: "#",
-      githubUrl: "https://github.com/ALLALI-Fadoua/SQL-Miroir",
-      image: "sqlmiroir",
-      category: "Full-Stack Simulation"
+      url: "www.sql.com",
+      image: "../../public/assets/SQL-Home.png",
+      category: "Simulation Full-Stack"
     },
     {
+      id: "mehneti",
       title: "Mehneti.dz",
-      description: "A smart platform connecting job seekers and employers in Algeria. Full-stack web application designed, built, and led by me.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      features: ["Smart Matching", "Real-time Chat", "Profile Management", "Job Analytics"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/ALLALI-Fadoua/Mihneti",
-      image: "mehneti",
-      category: "Full-Stack Platform"
+      description: "Plateforme algérienne intelligente qui connecte chercheurs d’emploi et recruteurs pour optimiser l’écosystème du travail en Algérie.",
+      technologies: ["React", "Vite", "Node.js", "MongoDB", "Express"],
+      features: [
+        "Appariement intelligent",
+        "Chat en temps réel",
+        "Gestion des profils",
+        "Analyse des offres d'emploi"
+      ],
+      url: "#",
+      image: "../../public/assets/Mihneti-Home.png",
+      category: "Plateforme Full-Stack"
     },
     {
-      title: "Portfolio Website",
-      description: "Responsive portfolio website with modern design, dark mode, and smooth animations.",
+      id: "portfolio",
+      title: "Site Portfolio",
+      description: "Site web personnel qui présente les projets, compétences et réalisations d’une personne, souvent utilisé pour mettre en valeur son profil professionnel et attirer des opportunités.",
       technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      features: ["Responsive Design", "Dark Mode", "Smooth Animations", "Contact Form"],
-      liveUrl: "#",
-      githubUrl: "#",
-      image: "portfolio",
+      features: [
+        "Interface moderne et minimaliste",
+        "Intégration des réseaux sociaux",
+        "Section projets interactive",
+        "Formulaire de contact"
+      ],
+      url: "#",
+      image: "../../public/assets/Portfolio-Home.png",
       category: "Web Design"
     }
   ];
 
   const ProjectCard = ({ project }) => (
     <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-      {/* Project Image Placeholder */}
-      <div className="h-48 bg-gradient-to-br from-blue-950 to-orange-600 flex items-center justify-center relative overflow-hidden">
-        <div className="text-center text-white">
+      <div 
+        className="h-48 flex items-center justify-center relative overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${project.image})`,
+          backgroundColor: '#1e3a8a'
+        }}
+      >
+        <div className="text-center text-white z-10">
           <div className="text-4xl font-bold mb-2">{project.title.charAt(0)}</div>
           <div className="text-sm opacity-90">{project.category}</div>
         </div>
-        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/70 to-orange-600/70 group-hover:from-blue-950/50 group-hover:to-orange-600/50 transition-all duration-300"></div>
       </div>
 
-      {/* Project Content */}
       <div className="p-6 space-y-4">
         <div className="flex items-start justify-between">
           <div>
@@ -67,7 +82,6 @@ const Projects = () => {
           {project.description}
         </p>
 
-        {/* Technologies */}
         <div>
           <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Technologies:</h4>
           <div className="flex flex-wrap gap-2">
@@ -79,9 +93,8 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Features */}
         <div>
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Features:</h4>
+          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Fonctionnalités principales:</h4>
           <div className="grid grid-cols-2 gap-2">
             {project.features.map((feature, i) => (
               <div key={i} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
@@ -92,14 +105,22 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <Link
+            to={`/projects/${project.id}`}
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-950 dark:bg-orange-600 text-white rounded-lg hover:bg-blue-900 dark:hover:bg-orange-700 transition-colors duration-200 font-medium"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Plus
+          </Link>
           <a
-            href={project.githubUrl}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border-2 border-blue-950 dark:border-orange-600 text-blue-950 dark:text-orange-600 rounded-lg hover:bg-blue-950 dark:hover:bg-orange-600 hover:text-white dark:hover:text-white transition-all duration-200 font-medium"
           >
-            <Github className="w-4 h-4" />
-            GitHub
+            <Globe className="w-4 h-4" />
+            Explorer
           </a>
         </div>
       </div>
@@ -119,14 +140,12 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
 
-        {/* Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-950 to-orange-600 p-8 rounded-xl text-white">
             <h3 className="text-2xl font-bold mb-4">Vous avez un projet en tête ?</h3>
