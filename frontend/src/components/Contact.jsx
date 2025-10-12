@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/fadoua-allali-977b19377/",
+      url: "https://www.linkedin.com/in/fadoua-allali",
       color: "hover:text-blue-600"
     },
     {
