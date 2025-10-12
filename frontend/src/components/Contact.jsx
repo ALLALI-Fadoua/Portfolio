@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Facebook } from 'lucide-react';
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from 'react';
 
@@ -59,10 +59,10 @@ const Contact = () => {
       color: "hover:text-blue-600"
     },
     {
-      icon: <Twitter className="w-6 h-6" />,
-      name: "Twitter",
-      url: "https://x.com/3allalifadoua",
-      color: "hover:text-blue-400"
+      icon: <Facebook className="w-6 h-6" />,
+      name: "Facebook",
+      url: "https://www.facebook.com/profile.php?id=61553607692913",
+      color: "hover:text-blue-600"
     },
     {
       icon: <FaWhatsapp className="w-6 h-6" />,
