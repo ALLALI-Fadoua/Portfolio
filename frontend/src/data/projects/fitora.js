@@ -36,7 +36,7 @@ export const fitora = {
     "Clean, scalable architecture ready for real backend integration"
   ],
   githubUrl: "https://github.com/ALLALI-Fadoua/Fitora",
-  url: "#",
+  url: "https://fitora-4ie5w97h8-allali-fadouas-projects.vercel.app/",
   heroImage: "/assets/Fitora-Home.png",
   heroColor: "from-amber-900/90 to-orange-900/90",
   galleryImages: [
