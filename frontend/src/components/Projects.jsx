@@ -1,55 +1,8 @@
 import { ExternalLink, Globe, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { projects } from '../data/projects/index.js';
 
 const Projects = () => {
-  const projects = [
-    {
-      id: "sql-miroir",
-      title: "SQL Miroir",
-      description: "Application web simulant un système de base de données relationnelle (SGBDR). Conçue pour exécuter des opérations similaires au SQL via une interface interactive.",
-      technologies: ["React", "Vite", "Node.js", "Express", "MySQL"],
-      features: [
-        "Simulation de bases de données et de tables",
-        "Exécution de requêtes SQL",
-        "Affichage des résultats en temps réel",
-        "Gestion des métadonnées"
-      ],
-      url: "www.sql.com",
-      image: "/assets/SQL-Home.png",
-      category: "Simulation Full-Stack"
-    },
-    {
-      id: "mehneti",
-      title: "Mehneti.dz",
-      description: "Plateforme algérienne intelligente qui connecte chercheurs d’emploi et recruteurs pour optimiser l’écosystème du travail en Algérie.",
-      technologies: ["React", "Vite", "Node.js", "MongoDB", "Express"],
-      features: [
-        "Appariement intelligent",
-        "Chat en temps réel",
-        "Gestion des profils",
-        "Analyse des offres d'emploi"
-      ],
-      url: "#",
-      image: "/assets/Mihneti-Home.png",
-      category: "Plateforme Full-Stack"
-    },
-    {
-      id: "portfolio",
-      title: "Site Portfolio",
-      description: "Site web personnel qui présente les projets, compétences et réalisations d’une personne, souvent utilisé pour mettre en valeur son profil professionnel et attirer des opportunités.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      features: [
-        "Interface moderne et minimaliste",
-        "Intégration des réseaux sociaux",
-        "Section projets interactive",
-        "Formulaire de contact"
-      ],
-      url: "#",
-      image: "/assets/Portfolio-Home.png",
-      category: "Web Design"
-    }
-  ];
-
   const ProjectCard = ({ project }) => (
     <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
       <div 
@@ -94,7 +47,7 @@ const Projects = () => {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Fonctionnalités principales:</h4>
+          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Features:</h4>
           <div className="grid grid-cols-2 gap-2">
             {project.features.map((feature, i) => (
               <div key={i} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
@@ -111,7 +64,7 @@ const Projects = () => {
             className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-950 dark:bg-orange-600 text-white rounded-lg hover:bg-blue-900 dark:hover:bg-orange-700 transition-colors duration-200 font-medium"
           >
             <ExternalLink className="w-4 h-4" />
-            Plus
+            More
           </Link>
           <a
             href={project.url}
@@ -120,7 +73,7 @@ const Projects = () => {
             className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border-2 border-blue-950 dark:border-orange-600 text-blue-950 dark:text-orange-600 rounded-lg hover:bg-blue-950 dark:hover:bg-orange-600 hover:text-white dark:hover:text-white transition-all duration-200 font-medium"
           >
             <Globe className="w-4 h-4" />
-            Explorer
+            Explore
           </a>
         </div>
       </div>
@@ -132,11 +85,11 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-950 dark:text-orange-600 mb-4">
-            Mes Projets
+            My Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-950 to-orange-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-            Découvrez quelques-uns de mes projets qui illustrent ma capacité à créer des solutions web innovantes et impactantes
+            Discover some of my projects that showcase my ability to create innovative and impactful web solutions
           </p>
         </div>
 
@@ -148,12 +101,12 @@ const Projects = () => {
 
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-950 to-orange-600 p-8 rounded-xl text-white">
-            <h3 className="text-2xl font-bold mb-4">Vous avez un projet en tête ?</h3>
+            <h3 className="text-2xl font-bold mb-4">Have a Project in Mind?</h3>
             <p className="text-lg mb-6 opacity-90">
-              Collaborons pour transformer votre idée en une solution web exceptionnelle
+              Let's collaborate to turn your idea into an exceptional web solution
             </p>
             <button className="px-8 py-3 bg-white text-blue-950 rounded-lg hover:bg-gray-100 transition-colors duration-200 font-semibold">
-              Démarrer un Projet
+              Start a Project
             </button>
           </div>
         </div>

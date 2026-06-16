@@ -16,10 +16,10 @@ const Hero = () => {
     <section id="home" className="h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100 dark:from-gray-900 dark:to-gray-800 pt-16 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         
-        {/* Container principal avec flexbox vertical */}
+        {/* Main container with vertical flexbox */}
         <div className="h-full flex flex-col justify-center">
           
-          {/* Top Section - 2 Colonnes */}
+          {/* Top Section - 2 Columns */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full mb-12">
             
             {/* Left Column - Text Content */}
@@ -79,7 +79,7 @@ const Hero = () => {
 
           {/* Bottom Section - Quote + CTA Buttons */}
           <div className="flex flex-col items-center gap-6">            
-            {/* Buttons en bottom */}
+            {/* Bottom buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToProjects}

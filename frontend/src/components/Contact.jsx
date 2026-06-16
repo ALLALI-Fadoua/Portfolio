@@ -33,13 +33,13 @@ const Contact = () => {
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Localisation",
-      details: "Boumèrdes, Algérie",
+      title: "Location",
+      details: "Boumèrdes, Algeria",
       action: null
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Téléphone",
+      title: "Phone",
       details: "+213 778 659 963",
       action: "tel:+213778659963"
     }
@@ -77,11 +77,11 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-950 dark:text-orange-600 mb-4">
-            Contactez-moi
+            Contact Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-950 to-orange-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-            N'hésitez pas à me contacter pour des collaborations, des opportunités ou simplement pour discuter de vos projets
+            Feel free to reach out for collaborations, opportunities, or simply to discuss your projects
           </p>
         </div>
 
@@ -90,12 +90,12 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-6">
-                Restons en contact
+                Let's Stay in Touch
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                Je suis toujours ouverte aux nouvelles opportunités et aux projets passionnants. 
-                Que ce soit pour une collaboration, un poste ou simplement pour échanger sur le développement web, 
-                n'hésitez pas à me contacter !
+                I'm always open to new opportunities and exciting projects. 
+                Whether it's for a collaboration, a position, or simply to talk about web development, 
+                don't hesitate to contact me!
               </p>
             </div>
 
@@ -128,7 +128,7 @@ const Contact = () => {
             {/* Social Links */}
             <div>
               <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4">
-                Suivez-moi sur les réseaux
+                Follow Me on Social Media
               </h4>
               <div className="flex gap-4">
                 {socialLinks.map((link, index) => (
@@ -149,7 +149,7 @@ const Contact = () => {
             {/* Quote */}
             <blockquote className="bg-white dark:bg-gray-900 p-6 rounded-xl border-l-4 border-orange-600 shadow-lg">
               <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-2">
-                "Les meilleures collaborations naissent d'une conversation. Alors, commençons à discuter !"
+                "The best collaborations start with a conversation. So, let's start talking!"
               </p>
               <cite className="text-orange-600 font-semibold">- ALLALI Fadoua</cite>
             </blockquote>
@@ -159,14 +159,14 @@ const Contact = () => {
           <div>
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-6">
-                Envoyez-moi un message
+                Send Me a Message
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Nom complet
+                      Full Name
                     </label>
                     <input
                       type="text"
@@ -176,7 +176,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-950 dark:focus:ring-orange-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-gray-100"
-                      placeholder="Votre nom"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
@@ -191,14 +191,14 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-950 dark:focus:ring-orange-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-gray-100"
-                      placeholder="votre.email@exemple.com"
+                      placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Sujet
+                    Subject
                   </label>
                   <input
                     type="text"
@@ -208,7 +208,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-950 dark:focus:ring-orange-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-gray-100"
-                    placeholder="De quoi souhaitez-vous parler ?"
+                    placeholder="What would you like to talk about?"
                   />
                 </div>
 
@@ -224,7 +224,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-950 dark:focus:ring-orange-600 focus:border-transparent transition-colors duration-200 resize-none text-gray-900 dark:text-gray-100"
-                    placeholder="Décrivez votre projet ou votre message..."
+                    placeholder="Describe your project or your message..."
                   ></textarea>
                 </div>
 
@@ -233,7 +233,7 @@ const Contact = () => {
                   className="w-full px-6 py-4 bg-gradient-to-r from-blue-950 to-orange-600 text-white rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 font-semibold flex items-center justify-center gap-2"
                 >
                   <Send className="w-5 h-5" />
-                  Envoyer le Message
+                  Send Message
                 </button>
               </form>
             </div>

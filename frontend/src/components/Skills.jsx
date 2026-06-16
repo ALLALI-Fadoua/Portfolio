@@ -10,30 +10,30 @@ const Skills = () => {
     { 
       name: "UI/UX Design", 
       icon: <Palette className="w-8 h-8" />, 
-      description: "Design thinking, prototypage, interfaces intuitives"
+      description: "Design thinking, prototyping, intuitive interfaces"
     },
     { 
       name: "Database Design", 
       icon: <Database className="w-8 h-8" />, 
-      description: "MySQL, MongoDB, optimisation"
+      description: "MySQL, MongoDB, optimization"
     },
     { 
       name: "API Integration", 
       icon: <Globe className="w-8 h-8" />, 
-      description: "REST, intégrations tierces"
+      description: "REST, third-party integrations"
     },
     { 
       name: "Responsive Design", 
       icon: <Zap className="w-8 h-8" />, 
-      description: "Mobile-first, performance, accessibilité"
+      description: "Mobile-first, performance, accessibility"
     }
   ];
 
   const softSkills = [
-    { name: "Créativité", icon: <Lightbulb className="w-8 h-8" /> },
-    { name: "Résolution de problèmes", icon: <Target className="w-8 h-8" /> },
-    { name: "Travail d'équipe", icon: <Users className="w-8 h-8" /> },
-    { name: "Adaptabilité", icon: <Zap className="w-8 h-8" /> }
+    { name: "Creativity", icon: <Lightbulb className="w-8 h-8" /> },
+    { name: "Problem Solving", icon: <Target className="w-8 h-8" /> },
+    { name: "Teamwork", icon: <Users className="w-8 h-8" /> },
+    { name: "Adaptability", icon: <Zap className="w-8 h-8" /> }
   ];
 
   return (
@@ -41,11 +41,11 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-950 dark:text-orange-600 mb-4">
-            Mes Compétences
+            My Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-950 to-orange-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-            Une combinaison équilibrée de compétences techniques solides et de qualités humaines essentielles
+            A balanced combination of solid technical skills and essential soft skills
           </p>
         </div>
 
@@ -55,10 +55,10 @@ const Skills = () => {
             <div className="text-center lg:text-left">
               <h3 className="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-2 flex items-center justify-center lg:justify-start gap-3">
                 <Code className="w-8 h-8 text-blue-950 dark:text-orange-600" />
-                Compétences Techniques
+                Technical Skills
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Technologies et outils maîtrisés pour créer des solutions web complètes
+                Technologies and tools mastered to build complete web solutions
               </p>
             </div>
 
@@ -79,7 +79,7 @@ const Skills = () => {
                     </div>
                   </div>
                   
-                  {/* Indicateur visuel sans pourcentage */}
+                  {/* Visual indicator without percentage */}
                   <div className="mt-4 flex justify-center">
                     <div className="flex space-x-1">
                       {[1, 2, 3, 4, 5].map((dot) => (
@@ -103,7 +103,7 @@ const Skills = () => {
                 Soft Skills
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Qualités humaines qui enrichissent mon approche du développement
+                Human qualities that enrich my approach to development
               </p>
             </div>
 
@@ -125,11 +125,11 @@ const Skills = () => {
             {/* Additional Info */}
             <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border-l-4 border-gradient-to-b border-blue-950 dark:border-orange-600">
               <h4 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4 text-center">
-                Approche Collaborative
+                Collaborative Approach
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">
-                Je privilégie une approche collaborative où l'écoute active, la communication claire 
-                et l'adaptabilité permettent de transformer les défis en opportunités d'innovation.
+                I favor a collaborative approach where active listening, clear communication 
+                and adaptability turn challenges into opportunities for innovation.
               </p>
             </div>
           </div>
