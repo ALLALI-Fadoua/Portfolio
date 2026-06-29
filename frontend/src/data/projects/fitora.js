@@ -36,7 +36,7 @@ export const fitora = {
     "Clean, scalable architecture ready for real backend integration"
   ],
   githubUrl: "https://github.com/ALLALI-Fadoua/Fitora",
-  url: "https://fitora-one.vercel.app/",
+  url: "https://fitorra.netlify.app/",
   heroImage: "/assets/Fitora-Home.png",
   heroColor: "from-amber-900/90 to-orange-900/90",
   galleryImages: [
