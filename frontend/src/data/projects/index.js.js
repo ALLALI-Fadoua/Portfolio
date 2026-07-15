@@ -2,6 +2,8 @@ import { mehneti }   from './mehneti';
 import { sqlMiroir } from './sql-miroir';
 import { portfolio } from './portfolio';
 import { fitora }    from './fitora';
+import {dzayer3abrzaman} from './dzayer3abrzaman'
+import {unihubdz} from './unihubdz'
 
-export { mehneti, sqlMiroir, portfolio, fitora };
-export const projects = [sqlMiroir, mehneti, fitora, portfolio];
+export { mehneti, sqlMiroir, portfolio, fitora, dzayer3abrzaman, unihubdz };
+export const projects = [sqlMiroir, mehneti, fitora, portfolio, dzayer3abrzaman, unihubdz];

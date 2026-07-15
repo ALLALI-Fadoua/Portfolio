@@ -2,13 +2,22 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Zap, CheckCircle, Code, Layers, Calendar, Users, Target } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Header from './Header';
-import { sqlMiroir, mehneti, portfolio, fitora } from '../data/projects/index.js';
+import {
+  sqlMiroir,
+  mehneti,
+  portfolio,
+  fitora,
+  dzayer3abrzaman,
+  unihubdz,
+} from "../data/projects/index.js";
 
 const projectsData = {
+  "fitora": fitora,
+  "unihubdz": unihubdz,
+  "dzayer3abrzaman": dzayer3abrzaman,
+  "mehneti": mehneti,
   "sql-miroir": sqlMiroir,
-  "mehneti":    mehneti,
-  "portfolio":  portfolio,
-  "fitora":     fitora,
+  "portfolio": portfolio,
 };
 
 const ProjectDetail = () => {
@@ -131,8 +140,8 @@ const ProjectDetail = () => {
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                     {project.logo ? (
                       <img
-                        src={project.logo}
-                        alt={`${project.title} logo`}
+                        src={project.heroImage || project.logo}
+                        alt={project.title}
                         className="w-full h-full object-cover"
                       />
                     ) : (
