@@ -7,6 +7,8 @@ export const unihubdz = {
   team: "Solo",
   year: "2026",
   logo: "/assets/unihubdz.png",
+  logoScale: 1,
+  logoPadding: 0,
   availableForWork: true,
 
   description:
@@ -57,37 +59,38 @@ export const unihubdz = {
   heroColor: "from-blue-900/90 to-indigo-900/90",
 
   galleryImages: [
+    
+    {
+      url: "/assets/UniHub-admin.png",
+      title: "Admin Dashboard"
+    },
     {
       url: "/assets/UniHub-Home.png",
       title: "Landing Page"
-    },
-    {
-      url: "/assets/UniHub-Universities.png",
-      title: "Universities Directory"
-    },
-    {
-      url: "/assets/UniHub-Clubs.png",
-      title: "Student Clubs"
-    },
-    {
-      url: "/assets/UniHub-Events.png",
-      title: "Events & Workshops"
-    },
-    {
-      url: "/assets/UniHub-Internships.png",
-      title: "Internships & Jobs"
-    },
-    {
-      url: "/assets/UniHub-Scholarships.png",
-      title: "Scholarships & Competitions"
     },
     {
       url: "/assets/UniHub-Profile.png",
       title: "Student Profile"
     },
     {
-      url: "/assets/UniHub-Mobile.png",
-      title: "Responsive Mobile Experience"
-    }
+      url: "/assets/UniHub-Clubs-admin.png",
+      title: "Admin Clubs Management"
+    },
+    {
+      url: "/assets/UniHub-Clubs.png",
+      title: "Clubs"
+    },
+    {
+      url: "/assets/UniHub-student-events.png",
+      title: "Student Events"
+    },
+    {
+      url: "/assets/UniHub-Events-admin.png",
+      title: "Admin Events Management"
+    },
+    {
+      url: "/assets/UniHub-Events.png",
+      title: "Events & Workshops"
+    },
   ]
 };

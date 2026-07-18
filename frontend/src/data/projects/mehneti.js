@@ -7,6 +7,8 @@ export const mehneti = {
   team: "2 Project Managers (developers)",
   year: "2025",
   logo: "/assets/Mihneti-logo.png",
+  logoScale: 1.01,
+  logoPadding: 0,
   availableForWork: false,
   description: "Mehneti.dz is a complete web platform that connects job seekers and employers in Algeria. As project manager and lead developer, I designed and built this innovative solution that revolutionizes the recruitment process.",
   context: "This platform uses intelligent matching algorithms to connect candidates with the most relevant opportunities. It offers a smooth user experience with real-time chat features, advanced profile management and detailed analytics.",

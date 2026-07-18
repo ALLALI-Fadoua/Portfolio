@@ -6,7 +6,7 @@ export const sqlMiroir = {
   duration: "2 months",
   team: "Solo",
   year: "2025",
-  logo: "/assets/SQL-Logo.png",
+  logo: "/assets/SQL-Logo1.png",
   availableForWork: false,
   description: "SQL Miroir is an innovative web application that simulates a relational database management system (RDBMS). It allows users to execute SQL operations through an interactive and intuitive user interface.",
   context: "Developed to help students and professionals understand and practice SQL operations without needing to install a full RDBMS. The application offers an immersive experience with a complete simulation of the essential features of a relational database.",

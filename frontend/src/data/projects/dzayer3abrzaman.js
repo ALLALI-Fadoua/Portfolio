@@ -2,11 +2,13 @@ export const dzayer3abrzaman = {
   id: "dzayer3abrzaman",
   title: "دزاير عبر الزمن",
   subtitle: "Explore Algeria's history through an interactive digital timeline",
-  category: "Educational Web Platform",
+  category: "Interactive History Platform",
   duration: "2 weeks",
   team: "Solo",
   year: "2026",
   logo: "/assets/dzayer.png",
+  logoScale: 1,
+  logoPadding: 0,
   availableForWork: true,
 
   description:
@@ -57,12 +59,14 @@ export const dzayer3abrzaman = {
   heroColor: "from-emerald-900/90 to-green-900/90",
 
   galleryImages: [
-    { url: "/assets/Dzayer-Home.png", title: "Landing Page" },
+    { url: "/assets/Dzayer-admin.png", title: "Admin Dashboard" },
     { url: "/assets/Dzayer-Timeline.png", title: "Interactive Historical Timeline" },
     { url: "/assets/Dzayer-Eras.png", title: "Historical Eras" },
+    { url: "/assets/Dzayer-static2.png", title: "Admin Years Mangement" },
     { url: "/assets/Dzayer-Events.png", title: "Major Historical Events" },
     { url: "/assets/Dzayer-Figures.png", title: "Historical Figures" },
-    { url: "/assets/Dzayer-Details.png", title: "Event Details" },
-    { url: "/assets/Dzayer-Mobile.png", title: "Responsive Mobile Experience" }
+    { url: "/assets/Dzayer-static1.png", title: "Admin Statistics Mangement" },
+    { url: "/assets/Dzayer-static.png", title: "Statistics of Evolution" },
+    { url: "/assets/Dzayer-static3.png", title: "Site Sections" }
   ]
 };

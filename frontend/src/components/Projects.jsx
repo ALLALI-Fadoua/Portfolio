@@ -118,7 +118,7 @@ const Projects = () => {
 
           <Link
             to={`/projects/${project.id}`}
-            className="flex-1 flex items-center justify-center gap-2 rounded-lg bg-blue-950 py-3 text-white hover:bg-blue-900 transition"
+            className="flex-1 flex items-center justify-center gap-2 rounded-lg bg-orange-600 py-3 text-white hover:bg-blue-900 transition"
           >
             <ExternalLink size={18} />
             More
