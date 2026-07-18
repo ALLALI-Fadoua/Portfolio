@@ -6,7 +6,7 @@ export const dzayer3abrzaman = {
   duration: "2 weeks",
   team: "Solo",
   year: "2026",
-  logo: "../../../public/assets/dzayer.png",
+  logo: "/assets/dzayer.png",
   availableForWork: true,
 
   description:

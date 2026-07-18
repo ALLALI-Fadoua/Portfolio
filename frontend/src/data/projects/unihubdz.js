@@ -6,7 +6,7 @@ export const unihubdz = {
   duration: "3 weeks",
   team: "Solo",
   year: "2026",
-  logo: "../../../public/assets/unihubdz.png",
+  logo: "/assets/unihubdz.png",
   availableForWork: true,
 
   description:
