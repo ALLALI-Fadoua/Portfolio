@@ -9,9 +9,11 @@ import {
   fitora,
   dzayer3abrzaman,
   unihubdz,
+  leora,
 } from "../data/projects/index.js";
 
 const projectsData = {
+  "leora": leora,
   "fitora": fitora,
   "unihubdz": unihubdz,
   "dzayer3abrzaman": dzayer3abrzaman,
@@ -139,16 +141,16 @@ const ProjectDetail = () => {
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-600 via-orange-500 to-orange-600 p-1 shadow-2xl">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                     {project.logo ? (
-  <img
-    src={project.logo}
-    alt={project.title}
-    className="w-full h-full object-contain"
-    style={{
-      padding: `${project.logoPadding ?? 0}px`,
-      transform: `scale(${project.logoScale ?? 1.3})`,
-    }}
-  />
-) : (
+                      <img
+                        src={project.logo}
+                        alt={project.title}
+                        className="w-full h-full object-contain"
+                        style={{
+                          padding: `${project.logoPadding ?? 0}px`,
+                          transform: `scale(${project.logoScale ?? 1.3})`,
+                        }}
+                      />
+                    ) : (
                       <span className="text-8xl font-dancing text-transparent bg-clip-text bg-gradient-to-br from-purple-400 via-orange-400 to-orange-600">
                         {project.title.charAt(0)}
                       </span>
